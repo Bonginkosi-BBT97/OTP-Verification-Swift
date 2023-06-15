@@ -19,7 +19,7 @@ struct Verfication: View {
             OTPField()
             
             Button {
-                
+                Task{await otpModel.verifyOTP()}
             } label: {
                 Text("Verify")
                     .fontWeight(.semibold)
@@ -27,8 +27,15 @@ struct Verfication: View {
                     .padding(.vertical,12)
                     .frame(maxWidth: .infinity)
                     .background {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous) .fill(.blue)
+                        RoundedRectangle(cornerRadius: 10, style:.continuous)
                         
+                            .fill(.blue)
+                            .opacity(otpModel.isLoading ? 0 : 1)
+                        
+                    }
+                    .overlay {
+                        ProgressView()
+                            .opacity(otpModel.isLoading ? 1 : 0)
                     }
             }
             .disabled(checkStates())
