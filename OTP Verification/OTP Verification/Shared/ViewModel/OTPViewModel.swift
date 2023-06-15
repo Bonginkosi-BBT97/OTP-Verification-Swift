@@ -24,6 +24,7 @@ class OTPViewModel: ObservableObject {
     @Published var verificationCode: String = ""
     @Published var isLoading: Bool = false
     
+    @Published var navigationTag: String?
     
     //MARK: Sending OTP
     func sendOTP() async {
@@ -35,6 +36,7 @@ class OTPViewModel: ObservableObject {
                 
                 self.isLoading = false
                 self.verificationCode = result
+                self.navigationTag = "VERIFICATION"
             }
         } catch {
             handleError(error: error.localizedDescription)

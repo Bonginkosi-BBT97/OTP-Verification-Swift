@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Verfication: View {
-    @StateObject var otpModel: OTPViewModel = .init()
+    @EnvironmentObject var otpModel: OTPViewModel
+
     //MARK: TextField FocusState
     
     @FocusState var activeField: OTPField?
@@ -50,6 +51,7 @@ struct Verfication: View {
         .onChange(of: otpModel.otpFields) { newValue in
             OTPCondition(value: newValue)
         }
+        .alert(otpModel.errorMsg, isPresented: $otpModel.showAlert) {}
     }
     
     func checkStates()->Bool {
@@ -60,7 +62,27 @@ struct Verfication: View {
         return false
     }
     // MARK: Conditions For Custom OTP Field & Limiting Only one Text
+    
+    
     func OTPCondition(value: [String]) {
+        
+        // Checking if OTP is Pressed
+        for index in 0..<6 {
+            if value[index].count == 6 {
+                DispatchQueue.main.async {
+                    otpModel.otpText = value[index]
+                    otpModel.otpFields[index] = ""
+                    
+                    //updating All Textfields with value
+                    
+                    for item in otpModel.otpText.enumerated() {
+                        otpModel.otpFields[item.offset] = String(item.element)
+                    }
+                }
+                return
+            }
+        }
+        
         // Moving to the next field if current field type
         for index in 0..<5 {
             if value[index].count == 1 && activeStateIndex(index: index) == activeField {

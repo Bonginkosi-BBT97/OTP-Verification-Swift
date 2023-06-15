@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		DE87C57A2A3B170C00A1E4BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DE87C5792A3B170C00A1E4BB /* FirebaseAuth */; };
+		DE87C57C2A3B26E200A1E4BB /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87C57B2A3B26E200A1E4BB /* LoginScreen.swift */; };
 		DEDDC67D2A39E8AE00C53C4F /* OTP_VerificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC67C2A39E8AE00C53C4F /* OTP_VerificationApp.swift */; };
 		DEDDC67F2A39E8AE00C53C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC67E2A39E8AE00C53C4F /* ContentView.swift */; };
 		DEDDC6812A39E8B000C53C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6802A39E8B000C53C4F /* Assets.xcassets */; };
 		DEDDC6842A39E8B000C53C4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6832A39E8B000C53C4F /* Preview Assets.xcassets */; };
 		DEDDC68E2A39E96500C53C4F /* Verfication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC68D2A39E96500C53C4F /* Verfication.swift */; };
 		DEDDC6912A39EBDE00C53C4F /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC6902A39EBDE00C53C4F /* OTPViewModel.swift */; };
-		DEDDC6932A39FFBB00C53C4F /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */; };
+		DEDDC6932A39FFBB00C53C4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6922A39FFBB00C53C4F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE87C57B2A3B26E200A1E4BB /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		DEDDC6792A39E8AE00C53C4F /* OTP Verification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP Verification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDDC67C2A39E8AE00C53C4F /* OTP_VerificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP_VerificationApp.swift; sourceTree = "<group>"; };
 		DEDDC67E2A39E8AE00C53C4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,7 +27,7 @@
 		DEDDC6832A39E8B000C53C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEDDC68D2A39E96500C53C4F /* Verfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verfication.swift; sourceTree = "<group>"; };
 		DEDDC6902A39EBDE00C53C4F /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
-		DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		DEDDC6922A39FFBB00C53C4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEDDC6942A3A003500C53C4F /* OTP-Verification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OTP-Verification-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,7 @@
 				DEDDC67C2A39E8AE00C53C4F /* OTP_VerificationApp.swift */,
 				DEDDC68A2A39E92300C53C4F /* Shared */,
 				DEDDC67E2A39E8AE00C53C4F /* ContentView.swift */,
-				DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */,
+				DEDDC6922A39FFBB00C53C4F /* GoogleService-Info.plist */,
 				DEDDC6802A39E8B000C53C4F /* Assets.xcassets */,
 				DEDDC6822A39E8B000C53C4F /* Preview Content */,
 			);
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DEDDC68D2A39E96500C53C4F /* Verfication.swift */,
+				DE87C57B2A3B26E200A1E4BB /* LoginScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 			files = (
 				DEDDC6842A39E8B000C53C4F /* Preview Assets.xcassets in Resources */,
 				DEDDC6812A39E8B000C53C4F /* Assets.xcassets in Resources */,
-				DEDDC6932A39FFBB00C53C4F /* GoogleService-Info-2.plist in Resources */,
+				DEDDC6932A39FFBB00C53C4F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +188,7 @@
 				DEDDC68E2A39E96500C53C4F /* Verfication.swift in Sources */,
 				DEDDC67F2A39E8AE00C53C4F /* ContentView.swift in Sources */,
 				DEDDC67D2A39E8AE00C53C4F /* OTP_VerificationApp.swift in Sources */,
+				DE87C57C2A3B26E200A1E4BB /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
