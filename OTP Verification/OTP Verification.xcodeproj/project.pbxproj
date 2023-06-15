@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE87C57A2A3B170C00A1E4BB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DE87C5792A3B170C00A1E4BB /* FirebaseAuth */; };
 		DEDDC67D2A39E8AE00C53C4F /* OTP_VerificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC67C2A39E8AE00C53C4F /* OTP_VerificationApp.swift */; };
 		DEDDC67F2A39E8AE00C53C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC67E2A39E8AE00C53C4F /* ContentView.swift */; };
 		DEDDC6812A39E8B000C53C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6802A39E8B000C53C4F /* Assets.xcassets */; };
 		DEDDC6842A39E8B000C53C4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6832A39E8B000C53C4F /* Preview Assets.xcassets */; };
 		DEDDC68E2A39E96500C53C4F /* Verfication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC68D2A39E96500C53C4F /* Verfication.swift */; };
 		DEDDC6912A39EBDE00C53C4F /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDDC6902A39EBDE00C53C4F /* OTPViewModel.swift */; };
+		DEDDC6932A39FFBB00C53C4F /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		DEDDC6832A39E8B000C53C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEDDC68D2A39E96500C53C4F /* Verfication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verfication.swift; sourceTree = "<group>"; };
 		DEDDC6902A39EBDE00C53C4F /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		DEDDC6942A3A003500C53C4F /* OTP-Verification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OTP-Verification-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE87C57A2A3B170C00A1E4BB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +60,11 @@
 		DEDDC67B2A39E8AE00C53C4F /* OTP Verification */ = {
 			isa = PBXGroup;
 			children = (
+				DEDDC6942A3A003500C53C4F /* OTP-Verification-Info.plist */,
 				DEDDC67C2A39E8AE00C53C4F /* OTP_VerificationApp.swift */,
 				DEDDC68A2A39E92300C53C4F /* Shared */,
 				DEDDC67E2A39E8AE00C53C4F /* ContentView.swift */,
+				DEDDC6922A39FFBB00C53C4F /* GoogleService-Info-2.plist */,
 				DEDDC6802A39E8B000C53C4F /* Assets.xcassets */,
 				DEDDC6822A39E8B000C53C4F /* Preview Content */,
 			);
@@ -113,6 +120,9 @@
 			dependencies = (
 			);
 			name = "OTP Verification";
+			packageProductDependencies = (
+				DE87C5792A3B170C00A1E4BB /* FirebaseAuth */,
+			);
 			productName = "OTP Verification";
 			productReference = DEDDC6792A39E8AE00C53C4F /* OTP Verification.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +151,9 @@
 				Base,
 			);
 			mainGroup = DEDDC6702A39E8AE00C53C4F;
+			packageReferences = (
+				DE87C5782A3B170C00A1E4BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DEDDC67A2A39E8AE00C53C4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +170,7 @@
 			files = (
 				DEDDC6842A39E8B000C53C4F /* Preview Assets.xcassets in Resources */,
 				DEDDC6812A39E8B000C53C4F /* Assets.xcassets in Resources */,
+				DEDDC6932A39FFBB00C53C4F /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OTP Verification/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OTP-Verification-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OTP Verification/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OTP-Verification-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE87C5782A3B170C00A1E4BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE87C5792A3B170C00A1E4BB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE87C5782A3B170C00A1E4BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEDDC6712A39E8AE00C53C4F /* Project object */;
 }

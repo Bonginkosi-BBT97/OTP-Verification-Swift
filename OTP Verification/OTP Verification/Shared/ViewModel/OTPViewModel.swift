@@ -5,7 +5,7 @@
 //  Created by Bonginkosi Tshabalala on 2023/06/14.
 //
 
-import Foundation
+import Firebase
 import SwiftUI
 
 class OTPViewModel: ObservableObject {
