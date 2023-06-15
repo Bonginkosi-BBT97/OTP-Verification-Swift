@@ -54,6 +54,9 @@ class OTPViewModel: ObservableObject {
     
     func verifyOTP()async{
         do {
+            otpText = otpFields.reduce("") { partialResult, value in
+               partialResult + value
+            }
             isLoading = true
             let credentail = PhoneAuthProvider.provider().credential(withVerificationID: verificationCode, verificationCode: otpText)
             
